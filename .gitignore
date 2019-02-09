@@ -1,0 +1,6 @@
+# Ignore below dir
+__pycache__/
+.idea/
+.ngrok2/
+.idea/
+test*
