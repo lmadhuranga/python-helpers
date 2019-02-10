@@ -13,9 +13,7 @@ def checkAuth():
         try:
             token = request.headers['API_TOKEN']
             # Check auth token is valied
-            if token in auth:
-                return None
-            else:
+            if token not in auth:
                 error = {'error':'Unauthorized', 'satus_code':401}
         except Exception as e:
             error = {'error':'Unauthorized', 'satus_code':401}
